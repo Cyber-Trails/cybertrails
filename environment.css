@@ -1,9 +1,9 @@
 :root {
     --environment-navy-deep: #010817;
-    --environment-midnight: #061432;
-    --environment-navy: #0a1f4a;
-    --environment-royal: #123f9b;
-    --environment-royal-soft: #2e66d6;
+    --environment-midnight: #071a3d;
+    --environment-navy: #0b2558;
+    --environment-royal: #1b4fb8;
+    --environment-royal-soft: #3f73e6;
     --environment-cyan: #67e8f9;
     --environment-blue: #60a5fa;
 }
@@ -12,11 +12,11 @@ body {
     position: relative;
     isolation: isolate;
     background:
-        radial-gradient(circle at 12% 6%, rgba(46, 102, 214, 0.46), transparent 33%),
-        radial-gradient(circle at 84% 16%, rgba(18, 63, 155, 0.38), transparent 31%),
-        radial-gradient(circle at 52% 68%, rgba(37, 99, 235, 0.28), transparent 45%),
-        radial-gradient(circle at 22% 86%, rgba(13, 43, 101, 0.34), transparent 42%),
-        linear-gradient(145deg, #0a1e49 0%, #06142f 42%, #020919 100%);
+        radial-gradient(circle at 10% 8%, rgba(63, 115, 230, 0.54), transparent 34%),
+        radial-gradient(circle at 88% 14%, rgba(27, 79, 184, 0.46), transparent 32%),
+        radial-gradient(circle at 54% 62%, rgba(37, 99, 235, 0.34), transparent 46%),
+        radial-gradient(circle at 20% 88%, rgba(15, 52, 122, 0.42), transparent 43%),
+        linear-gradient(145deg, #0c2a66 0%, #081a3d 40%, #031127 72%, #010817 100%);
     background-attachment: fixed;
 }
 
@@ -44,7 +44,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    opacity: 0.22;
+    opacity: 0.24;
     background-image:
         radial-gradient(circle at 18% 22%, rgba(221, 248, 255, 0.9) 0 1px, transparent 1.6px),
         radial-gradient(circle at 72% 32%, rgba(122, 216, 255, 0.8) 0 1px, transparent 1.8px),
@@ -56,54 +56,54 @@ body {
 .environment-haze {
     position: absolute;
     border-radius: 999px;
-    filter: blur(94px);
-    opacity: 0.48;
+    filter: blur(100px);
+    opacity: 0.54;
     mix-blend-mode: screen;
     animation: environment-drift 20s ease-in-out infinite alternate;
 }
 
 .environment-haze.one {
-    width: 52vw;
-    height: 52vw;
-    min-width: 430px;
-    min-height: 430px;
-    top: -18vw;
-    left: -14vw;
-    background: radial-gradient(circle, rgba(46, 102, 214, 0.74), rgba(46, 102, 214, 0));
+    width: 54vw;
+    height: 54vw;
+    min-width: 450px;
+    min-height: 450px;
+    top: -19vw;
+    left: -15vw;
+    background: radial-gradient(circle, rgba(63, 115, 230, 0.82), rgba(63, 115, 230, 0));
 }
 
 .environment-haze.two {
-    width: 45vw;
-    height: 45vw;
-    min-width: 380px;
-    min-height: 380px;
-    top: 16vh;
-    right: -16vw;
-    background: radial-gradient(circle, rgba(18, 63, 155, 0.60), rgba(18, 63, 155, 0));
+    width: 48vw;
+    height: 48vw;
+    min-width: 400px;
+    min-height: 400px;
+    top: 14vh;
+    right: -17vw;
+    background: radial-gradient(circle, rgba(27, 79, 184, 0.70), rgba(27, 79, 184, 0));
     animation-delay: -7s;
 }
 
 .environment-haze.three {
-    width: 60vw;
-    height: 42vw;
-    min-width: 500px;
-    min-height: 340px;
-    bottom: -18vw;
-    left: 16vw;
-    background: radial-gradient(circle, rgba(37, 99, 235, 0.50), rgba(37, 99, 235, 0));
+    width: 62vw;
+    height: 44vw;
+    min-width: 520px;
+    min-height: 360px;
+    bottom: -19vw;
+    left: 14vw;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.60), rgba(37, 99, 235, 0));
     animation-delay: -12s;
 }
 
 .environment-sheen {
     position: absolute;
     inset: -28%;
-    opacity: 0.28;
+    opacity: 0.34;
     background: linear-gradient(
         112deg,
-        transparent 32%,
-        rgba(74, 137, 255, 0.18) 44%,
-        rgba(134, 223, 255, 0.13) 50%,
-        transparent 66%
+        transparent 30%,
+        rgba(65, 123, 255, 0.22) 43%,
+        rgba(145, 226, 255, 0.16) 50%,
+        transparent 68%
     );
     transform: translateX(-40%);
     animation: environment-sheen 15s ease-in-out infinite;
@@ -113,8 +113,8 @@ body {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(to bottom, rgba(6, 20, 50, 0.01), rgba(0, 5, 18, 0.20)),
-        radial-gradient(circle at center, transparent 46%, rgba(0, 5, 18, 0.40) 100%);
+        linear-gradient(to bottom, rgba(8, 26, 61, 0.01), rgba(0, 5, 18, 0.18)),
+        radial-gradient(circle at center, transparent 48%, rgba(0, 5, 18, 0.34) 100%);
 }
 
 .background-grid {
@@ -130,40 +130,40 @@ body {
 
 .orb {
     z-index: -3;
-    filter: blur(66px);
-    opacity: 0.38;
+    filter: blur(70px);
+    opacity: 0.44;
     animation: environment-orb-float 18s ease-in-out infinite alternate;
 }
 
 .orb-one {
-    width: 590px;
-    height: 590px;
-    top: 3%;
-    right: -220px;
-    background: rgba(18, 63, 155, 0.30);
+    width: 610px;
+    height: 610px;
+    top: 2%;
+    right: -230px;
+    background: rgba(27, 79, 184, 0.36);
 }
 
 .orb-two {
-    width: 650px;
-    height: 650px;
-    bottom: -14%;
-    left: -250px;
-    background: rgba(46, 102, 214, 0.30);
+    width: 680px;
+    height: 680px;
+    bottom: -15%;
+    left: -260px;
+    background: rgba(63, 115, 230, 0.36);
     animation-delay: -8s;
 }
 
 .glass {
-    border-color: rgba(174, 226, 255, 0.26);
+    border-color: rgba(174, 226, 255, 0.28);
     background:
-        linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.035)),
-        linear-gradient(180deg, rgba(20, 55, 110, 0.52), rgba(4, 18, 42, 0.48));
+        linear-gradient(145deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.04)),
+        linear-gradient(180deg, rgba(22, 62, 124, 0.56), rgba(4, 18, 42, 0.48));
     box-shadow:
-        0 32px 96px rgba(0, 5, 22, 0.48),
-        inset 0 1px 0 rgba(255, 255, 255, 0.16),
-        inset 0 -1px 0 rgba(96, 165, 250, 0.08),
-        0 0 52px rgba(46, 102, 214, 0.09);
-    backdrop-filter: blur(32px) saturate(158%);
-    -webkit-backdrop-filter: blur(32px) saturate(158%);
+        0 34px 102px rgba(0, 5, 22, 0.50),
+        inset 0 1px 0 rgba(255, 255, 255, 0.18),
+        inset 0 -1px 0 rgba(96, 165, 250, 0.10),
+        0 0 58px rgba(63, 115, 230, 0.12);
+    backdrop-filter: blur(34px) saturate(164%);
+    -webkit-backdrop-filter: blur(34px) saturate(164%);
 }
 
 .glass::after {
@@ -173,9 +173,9 @@ body {
     border-radius: inherit;
     pointer-events: none;
     background:
-        linear-gradient(120deg, rgba(255, 255, 255, 0.12), transparent 22%, transparent 72%, rgba(96, 165, 250, 0.08)),
-        radial-gradient(circle at 12% 8%, rgba(255,255,255,0.09), transparent 24%);
-    opacity: 0.84;
+        linear-gradient(120deg, rgba(255, 255, 255, 0.14), transparent 22%, transparent 72%, rgba(96, 165, 250, 0.10)),
+        radial-gradient(circle at 12% 8%, rgba(255,255,255,0.10), transparent 24%);
+    opacity: 0.88;
 }
 
 .site-header,
@@ -192,7 +192,7 @@ body {
     box-shadow:
         0 18px 60px rgba(0, 7, 25, 0.46),
         inset 0 1px 0 rgba(255, 255, 255, 0.14),
-        0 0 46px rgba(46, 102, 214, 0.10);
+        0 0 50px rgba(63, 115, 230, 0.14);
 }
 
 .hero {
@@ -202,13 +202,13 @@ body {
 .hero::before {
     content: "";
     position: absolute;
-    width: min(760px, 78vw);
-    height: min(760px, 78vw);
-    left: -22vw;
-    top: 8vh;
+    width: min(780px, 80vw);
+    height: min(780px, 80vw);
+    left: -23vw;
+    top: 7vh;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(46, 102, 214, 0.24), transparent 70%);
-    filter: blur(22px);
+    background: radial-gradient(circle, rgba(63, 115, 230, 0.30), transparent 70%);
+    filter: blur(24px);
     pointer-events: none;
     z-index: -1;
 }
@@ -220,8 +220,8 @@ body {
 
 @keyframes environment-sheen {
     0%, 14% { transform: translateX(-44%) rotate(0.001deg); opacity: 0; }
-    30% { opacity: 0.28; }
-    58% { transform: translateX(36%) rotate(0.001deg); opacity: 0.18; }
+    30% { opacity: 0.34; }
+    58% { transform: translateX(36%) rotate(0.001deg); opacity: 0.22; }
     72%, 100% { transform: translateX(44%) rotate(0.001deg); opacity: 0; }
 }
 
@@ -237,8 +237,8 @@ body {
 
 @media (max-width: 700px) {
     .environment-haze {
-        opacity: 0.36;
-        filter: blur(68px);
+        opacity: 0.40;
+        filter: blur(70px);
     }
 
     #network-canvas {
