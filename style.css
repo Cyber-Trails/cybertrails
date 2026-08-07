@@ -35,10 +35,11 @@ body {
     font-family: "Inter", sans-serif;
     color: var(--text);
     background:
-        radial-gradient(circle at 15% 8%, rgba(69, 133, 255, 0.32), transparent 34%),
-        radial-gradient(circle at 83% 20%, rgba(34, 211, 238, 0.25), transparent 31%),
-        radial-gradient(circle at 52% 72%, rgba(27, 98, 190, 0.23), transparent 42%),
-        linear-gradient(145deg, #020817 0%, #07142c 36%, #0a1b39 68%, #030b1c 100%);
+        radial-gradient(circle at 15% 8%, rgba(42, 91, 176, 0.24), transparent 34%),
+        radial-gradient(circle at 83% 20%, rgba(24, 112, 169, 0.18), transparent 31%),
+        radial-gradient(circle at 52% 72%, rgba(22, 68, 150, 0.20), transparent 42%),
+        radial-gradient(circle at 72% 76%, rgba(38, 31, 96, 0.16), transparent 38%),
+        linear-gradient(145deg, #01040d 0%, #030a1b 28%, #06132e 55%, #071a38 75%, #020713 100%);
     background-attachment: fixed;
 }
 
