@@ -1,9 +1,9 @@
 :root {
-    --navy-1000: #020817;
-    --navy-950: #041025;
-    --navy-900: #081832;
-    --navy-850: #0d2143;
-    --navy-800: #12305a;
+    --navy-1000: #01040d;
+    --navy-950: #02091a;
+    --navy-900: #041229;
+    --navy-850: #071a36;
+    --navy-800: #0b2850;
     --cyan-200: #bdf7ff;
     --cyan-300: #7cecff;
     --cyan-400: #22d3ee;
@@ -13,9 +13,9 @@
     --muted: #91a4be;
     --border: rgba(150, 220, 255, 0.18);
     --border-strong: rgba(150, 220, 255, 0.32);
-    --glass-a: rgba(18, 43, 78, 0.48);
-    --glass-b: rgba(7, 24, 49, 0.26);
-    --shadow: 0 28px 90px rgba(0, 0, 0, 0.38);
+    --glass-a: rgba(12, 34, 67, 0.52);
+    --glass-b: rgba(4, 16, 38, 0.30);
+    --shadow: 0 28px 90px rgba(0, 0, 0, 0.44);
     --radius-lg: 30px;
     --radius-md: 22px;
 }
@@ -35,11 +35,11 @@ body {
     font-family: "Inter", sans-serif;
     color: var(--text);
     background:
-        radial-gradient(circle at 15% 8%, rgba(42, 91, 176, 0.24), transparent 34%),
-        radial-gradient(circle at 83% 20%, rgba(24, 112, 169, 0.18), transparent 31%),
-        radial-gradient(circle at 52% 72%, rgba(22, 68, 150, 0.20), transparent 42%),
-        radial-gradient(circle at 72% 76%, rgba(38, 31, 96, 0.16), transparent 38%),
-        linear-gradient(145deg, #01040d 0%, #030a1b 28%, #06132e 55%, #071a38 75%, #020713 100%);
+        radial-gradient(circle at 14% 10%, rgba(28, 74, 154, 0.28), transparent 34%),
+        radial-gradient(circle at 82% 18%, rgba(18, 91, 145, 0.20), transparent 31%),
+        radial-gradient(circle at 52% 70%, rgba(20, 62, 134, 0.20), transparent 42%),
+        radial-gradient(circle at 72% 76%, rgba(33, 28, 90, 0.18), transparent 38%),
+        linear-gradient(145deg, #01040d 0%, #020817 24%, #041229 49%, #071a36 70%, #020713 100%);
     background-attachment: fixed;
 }
 
@@ -68,8 +68,8 @@ body::after {
     z-index: -5;
     pointer-events: none;
     background:
-        conic-gradient(from 90deg at 25% 35%, transparent 0 20%, rgba(72, 165, 255, 0.06) 24%, transparent 30% 100%),
-        conic-gradient(from 220deg at 78% 58%, transparent 0 18%, rgba(34, 211, 238, 0.05) 23%, transparent 29% 100%);
+        conic-gradient(from 90deg at 25% 35%, transparent 0 20%, rgba(45, 115, 220, 0.05) 24%, transparent 30% 100%),
+        conic-gradient(from 220deg at 78% 58%, transparent 0 18%, rgba(18, 117, 166, 0.045) 23%, transparent 29% 100%);
     filter: blur(42px);
     animation: ambientSweep 18s ease-in-out infinite alternate;
 }
@@ -137,8 +137,8 @@ a {
     z-index: -3;
     border-radius: 50%;
     pointer-events: none;
-    filter: blur(22px);
-    opacity: 0.48;
+    filter: blur(24px);
+    opacity: 0.42;
 }
 
 .orb-one {
@@ -146,7 +146,7 @@ a {
     height: 420px;
     top: 9%;
     right: -120px;
-    background: radial-gradient(circle, rgba(34, 211, 238, 0.34), rgba(34, 211, 238, 0.06) 55%, transparent 72%);
+    background: radial-gradient(circle, rgba(25, 126, 181, 0.25), rgba(16, 51, 101, 0.05) 55%, transparent 72%);
     animation: orbFloatOne 17s ease-in-out infinite;
 }
 
@@ -155,22 +155,22 @@ a {
     height: 520px;
     bottom: -80px;
     left: -190px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.28), rgba(59, 130, 246, 0.05) 56%, transparent 72%);
+    background: radial-gradient(circle, rgba(41, 96, 190, 0.23), rgba(17, 43, 92, 0.05) 56%, transparent 72%);
     animation: orbFloatTwo 21s ease-in-out infinite;
 }
 
 .glass {
     border: 1px solid var(--border);
     background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.105), rgba(255, 255, 255, 0.025) 55%, rgba(124, 236, 255, 0.028)),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.024) 55%, rgba(124, 236, 255, 0.026)),
         linear-gradient(180deg, var(--glass-a), var(--glass-b));
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.09),
         inset 0 -1px 0 rgba(124, 236, 255, 0.04),
         var(--shadow),
-        0 0 45px rgba(34, 211, 238, 0.04);
-    backdrop-filter: blur(24px) saturate(135%);
-    -webkit-backdrop-filter: blur(24px) saturate(135%);
+        0 0 45px rgba(34, 211, 238, 0.035);
+    backdrop-filter: blur(24px) saturate(132%);
+    -webkit-backdrop-filter: blur(24px) saturate(132%);
 }
 
 .section-shell {
